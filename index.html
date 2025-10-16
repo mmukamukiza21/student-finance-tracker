@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Finance Tracker</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header>
+    <h1>💰 Student Finance Tracker</h1>
+    <nav>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#records">Records</a>
+      <a href="#add">Add Record</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard">
+      <h2>Dashboard</h2>
+      <p>Total Records: <span id="totalRecords">0</span></p>
+      <p>Total Amount: <span id="totalAmount">0</span></p>
+    </section>
+
+    <section id="records">
+      <h2>Transactions</h2>
+      <table id="recordsTable">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="add">
+      <h2>Add New Record</h2>
+      <form id="addForm">
+        <label>Description: <input type="text" id="descInput" required></label>
+        <label>Amount: <input type="number" step="0.01" id="amountInput" required></label>
+        <label>Category: <input type="text" id="catInput" required></label>
+        <label>Date: <input type="date" id="dateInput" required></label>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This Student Finance Tracker helps you manage your expenses and budgets easily.</p>
+      <p>Created by <strong>Milliam Mukamukiza</strong></p>
+      <p>GitHub: <a href="#" target="_blank">Your GitHub Link</a></p>
+      <p>Email: <a href="mailto:your@email.com">your@email.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Student Finance Tracker</p>
+  </footer>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
